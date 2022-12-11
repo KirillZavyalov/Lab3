@@ -1,5 +1,5 @@
 package ru.itmo.lab.intfce;
 
-public interface Edible {
+public interface FoodInterface {
     String getFoodName();
 }

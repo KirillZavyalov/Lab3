@@ -1,9 +1,9 @@
 package ru.itmo.lab.classes;
-import ru.itmo.lab.intfce.Edible;
+import ru.itmo.lab.intfce.FoodInterface;
 
 import java.util.Objects;
 
-public class Food implements Edible{
+public class Food implements FoodInterface {
     private String foodName;
 
     public Food(String foodName){
@@ -21,5 +21,15 @@ public class Food implements Edible{
         if (o == null || getClass() != o.getClass()) return false;
         Food other = (Food) o;
         return Objects.equals(this.foodName, other.foodName);
+    }
+
+    @Override
+    public String toString() {
+        return foodName;
+    }
+
+    @Override
+    public int hashCode() {
+        return foodName.hashCode();
     }
 }
