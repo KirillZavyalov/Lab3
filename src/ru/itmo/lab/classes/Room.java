@@ -8,11 +8,11 @@ import java.util.Objects;
 
 public class Room implements RoomInterface {
 
-    int number = 0;
+    private int number = 0;
 
-    int price;
-    String furniture;
-    Enum roomSize;
+    private int price;
+    private String furniture;
+    private Enum roomSize;
 
     public Room(int price, Enum roomSize, String furniture){
         this.price = price;
