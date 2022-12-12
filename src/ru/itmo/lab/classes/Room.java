@@ -27,14 +27,11 @@ public class Room implements RoomInterface {
         this.number = number;
     }
 
+
+
     @Override
     public int GetPrice(){
         return price;
-    }
-
-    @Override
-    public String getFurniture(){
-        return furniture;
     }
 
     @Override
@@ -53,6 +50,8 @@ public class Room implements RoomInterface {
 
         return null;
     }
+
+
 
     @Override
     public  void inspectRoom(){
