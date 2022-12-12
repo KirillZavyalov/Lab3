@@ -1,8 +1,5 @@
 package ru.itmo.lab.abst;
 
-import ru.itmo.lab.classes.Food;
-
-
 import java.util.Objects;
 
 public abstract class Humanoid {
@@ -10,10 +7,6 @@ public abstract class Humanoid {
 
     public Humanoid(String name) {
         this.name = name;
-    }
-
-    public void eat(Food food){
-        System.out.println(name + " уплетает " + food.getFoodName());
     }
 
     public String getName(){

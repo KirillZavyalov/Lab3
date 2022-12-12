@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Shorty extends Humanoid {
 
-    String name = getName();
+    private String name = getName();
     private String eatingSounds;
 
     public Shorty(String name) {
