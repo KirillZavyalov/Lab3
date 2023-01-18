@@ -1,0 +1,7 @@
+scp -r -P 2222 lab3 s368184@helios.cs.ifmo.ru:~/
+
+cd lab3
+javac -d build/classes/ src/ru/itmo/lab/**/*.java src/ru/itmo/lab/*.java
+cd build/
+jar -cvfm sample.jar MANIFEST.MF -C classes/ .
+java -jar sample.jar
